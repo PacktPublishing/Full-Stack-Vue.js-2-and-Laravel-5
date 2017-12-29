@@ -73,8 +73,6 @@ hr {
 
 .header .header-img {
   background-repeat: no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
   background-color: #f5f5f5;
@@ -128,38 +126,44 @@ hr {
   overflow: hidden;
 }
 
+button {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
 .about button.more {
   background: transparent;
   border: 0;
   color: #008489;
   padding: 0;
   font-size: 17px;
+  font-weight: bold;
 }
 
-.about button.more:hover, .about button.more:focus, .about button.more:active {
+.about button.more:hover,
+.about button.more:focus,
+.about button.more:active {
   text-decoration: underline;
   outline: none;
 }
 
-button {
+.header .header-img button {
+  font-size: 14px;
+  padding: 7px 18px;
+  color: #484848;
+  line-height: 1.43;
+  background: #ffffff;
+  font-weight: bold;
   border-radius: 4px;
   border: 1px solid #c4c4c4;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: bold;
-  line-height: 1.43;
-  user-select: none;
-  white-space: nowrap;
-  cursor: pointer;
-  background: #ffffff;
-  color: #484848;
-  padding: 7px 18px;
-  font-size: 14px;
-  display: inline-block;
-  margin-bottom: 0;
 }
 
-.header .header-img .view-photos {
+.header .header-img button.view-photos {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -180,7 +184,15 @@ button {
   display: block;
 }
 
-.modal-image img {
+.modal-content {
+  height: 100%;
+  max-width: 105vh;
+  padding-top: 12vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal-content img {
   max-width: 100%;
 }
 

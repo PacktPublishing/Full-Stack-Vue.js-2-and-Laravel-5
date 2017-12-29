@@ -16,24 +16,27 @@
     }
 </script>
 <style>
-    p {
+    .about p {
         white-space: pre-wrap;
     }
 
-    .contracted {
+    .about p.contracted {
         height: 250px;
         overflow: hidden;
     }
 
-    button.more {
+    .about button.more {
         background: transparent;
         border: 0;
         color: #008489;
         padding: 0;
         font-size: 17px;
+        font-weight: bold;
     }
 
-    button.more:hover, .about button.more:focus, .about button.more:active {
+    .about button.more:hover,
+    .about button.more:focus,
+    .about button.more:active {
         text-decoration: underline;
         outline: none;
     }

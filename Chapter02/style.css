@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  color: rgb(72,72,72);
+  color: #484848;
   font-size: 17px;
   margin: 0;
 }
@@ -47,7 +47,7 @@ body {
 
 .heading p {
   font-size: 15px;
-  color: rgb(118, 118, 118);
+  color: #767676;
 }
 
 hr {
@@ -73,8 +73,6 @@ hr {
 
 .header .header-img {
   background-repeat: no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-position: 50% 50%;
   background-color: #f5f5f5;
@@ -128,39 +126,44 @@ hr {
   overflow: hidden;
 }
 
+button {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
 .about button.more {
   background: transparent;
   border: 0;
   color: #008489;
   padding: 0;
   font-size: 17px;
+  font-weight: bold;
 }
 
-.about button.more:hover, .about button.more:focus, .about button.more:active {
+.about button.more:hover,
+.about button.more:focus,
+.about button.more:active {
   text-decoration: underline;
   outline: none;
 }
 
-button {
-  border-radius: 4px;
-  border: 1px solid;
-  border-color: #c4c4c4;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: bold;
-  line-height: 1.43;
-  user-select: none;
-  white-space: nowrap;
-  cursor: pointer;
-  background: white;
-  color: #484848;
-  padding: 7px 18px;
+.header .header-img button {
   font-size: 14px;
-  display: inline-block;
-  margin-bottom: 0;
+  padding: 7px 18px;
+  color: #484848;
+  line-height: 1.43;
+  background: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
 }
 
-.header .header-img .view-photos {
+.header .header-img button.view-photos {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -211,7 +214,7 @@ body.modal-open {
   background: transparent;
   border: 0;
   outline: none;
-  color: #fff;
+  color: #ffffff;
   z-index: 1000;
   font-weight: 100;
   line-height: 1;

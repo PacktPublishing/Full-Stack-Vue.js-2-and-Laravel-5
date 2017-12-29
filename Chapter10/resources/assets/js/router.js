@@ -25,9 +25,7 @@ let router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   let serverData = JSON.parse(window.vuebnb_server_data);
-  if (to.name === 'saved' && !store.state.auth) {
-    next('/login')
-  } else if (
+  if (
     to.name === 'listing'
       ? store.getters.getListing(to.params.listing)
       : store.state.listing_summaries.length > 0

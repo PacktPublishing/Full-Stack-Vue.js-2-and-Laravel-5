@@ -30,7 +30,7 @@
     }
 
     .hr {
-        border-bottom: 1px solid #DBDBDB;
+        border-bottom: 1px solid #dbdbdb;
         margin: 3em 0;
     }
 

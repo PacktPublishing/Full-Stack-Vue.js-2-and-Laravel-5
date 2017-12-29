@@ -1,7 +1,7 @@
 import "core-js/fn/object/assign";
 import Vue from 'vue';
 
-import router from './router.js';
+import router from './router';
 import App from '../components/App.vue';
 
 var app = new Vue({

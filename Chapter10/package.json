@@ -8,8 +8,8 @@
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "ftp-deploy-with-images": "node ./scripts/ftp.js",
-    "ftp-deploy": "FTP_SKIP_IMAGES=1 node ./scripts/ftp.js"
+    "ftp-deploy-with-images": "cross-env node ./scripts/ftp.js",
+    "ftp-deploy": "cross-env FTP_SKIP_IMAGES=1 node ./scripts/ftp.js"
   },
   "devDependencies": {
     "axios": "^0.17",

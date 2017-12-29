@@ -11,7 +11,7 @@
                        placeholder="Password" required>
             </div>
             <div class="form-control">
-                <button type="submit" class="btn btn-primary">Log in</button>
+                <button type="submit">Log in</button>
             </div>
         </form>
     </div>

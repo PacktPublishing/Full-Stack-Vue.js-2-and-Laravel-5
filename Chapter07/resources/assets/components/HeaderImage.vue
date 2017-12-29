@@ -7,12 +7,12 @@
 </template>
 <script>
     export default {
-        data() {
-            return {
-                headerImageStyle: {
+        computed: {
+            headerImageStyle() {
+                return {
                     'background-image': `url(${this.imageUrl})`
-                }
-            }
+                };
+            },
         },
         props: ['image-url']
     }
@@ -24,8 +24,6 @@
 
     .header .header-img {
         background-repeat: no-repeat;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
         background-position: 50% 50%;
         background-color: #f5f5f5;
@@ -34,7 +32,18 @@
         position: relative;
     }
 
-    .header .header-img .view-photos {
+    .header .header-img button {
+        font-size: 14px;
+        padding: 7px 18px;
+        color: #484848;
+        line-height: 1.43;
+        background: #ffffff;
+        font-weight: bold;
+        border-radius: 4px;
+        border: 1px solid #c4c4c4;
+    }
+
+    .header .header-img button.view-photos {
         position: absolute;
         bottom: 20px;
         left: 20px;

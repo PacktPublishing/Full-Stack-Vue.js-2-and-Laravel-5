@@ -37,8 +37,8 @@
 <style>
     .listing-save {
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 20px;
+        right: 20px;
         cursor: pointer;
     }
 
