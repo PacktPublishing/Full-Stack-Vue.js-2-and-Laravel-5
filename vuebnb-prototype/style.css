@@ -1,8 +1,8 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #484848;
-  font-size: 17px;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #484848;
 }
 
 .container {
@@ -16,21 +16,140 @@ body {
 }
 
 #toolbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e4e4e4;
+  background-color: #fff;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 #toolbar .icon {
+  display: inline-block;
   height: 34px;
   padding: 16px 12px 16px 24px;
-  display: inline-block;
 }
 
 #toolbar h1 {
-  color: #4fc08d;
   display: inline-block;
-  font-size: 28px;
   margin: 0;
+  font-size: 28px;
+  color: #4fc08d;
 }
+
+#app {
+  margin-top: 67px;
+}
+
+.header {
+  height: 320px;
+}
+
+.header .header-img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #f5f5f5;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #dce0e0;
+}
+
+.about {
+  margin-top: 2em;
+}
+
+.about h3 {
+  font-size: 22px;
+}
+
+.about p {
+  white-space: pre-wrap;
+  max-height: 2000px;
+  transition: all 1s ease-out;
+}
+
+.about p.contracted {
+  max-height: 250px;
+  overflow: hidden;
+}
+
+button {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+}
+  
+.about button.more {
+  background: transparent;
+  border: 0;
+  color: #008489;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.about button.more:hover,
+.about button.more:focus,
+.about button.more:active {
+  text-decoration: underline;
+  outline: none;
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2em 0;
+}
+
+.list .title {
+  flex: 1 1 25%;
+}
+
+.list .content {
+  flex: 1 1 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list .list-item {
+  flex: 0 0 50%;
+  margin-bottom: 16px;
+ }
+
+.list .list-item > i {
+  width: 35px;
+}
+
+@media (max-width: 743px) {
+  .list .title {
+    flex: 1 1 33%;
+  }
+  
+  .list .content {
+    flex: 1 1 67%;
+  }
+
+  .list .list-item {
+    flex: 0 0 100%;
+  } 
+}
+
+
+
+
+
+
+
+
+
