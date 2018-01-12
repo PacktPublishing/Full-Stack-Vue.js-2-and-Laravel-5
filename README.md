@@ -38,6 +38,3 @@ Before you begin development on the case-study project, you must ensure that you
 * [Vue.js 2.x by Example](https://www.packtpub.com/application-development/vuejs-2x-example?utm_source=github&utm_medium=repository&utm_campaign=9781788293464)
 
 * [Vue.js 2 Web Development Projects](https://www.packtpub.com/web-development/vuejs-2-web-development-projects?utm_source=github&utm_medium=repository&utm_campaign=9781787127463)
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
