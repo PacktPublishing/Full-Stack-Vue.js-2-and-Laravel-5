@@ -5,6 +5,11 @@ body {
   color: #484848;
 }
 
+body.modal-open {
+  position: fixed;
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -49,11 +54,37 @@ body {
 }
 
 .header .header-img {
+  position: relative;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 1.43;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background: white;
+  color: #484848;
+  padding: 7px 18px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.header .header-img .view-photos {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 hr {
@@ -71,13 +102,13 @@ hr {
 
 .about p {
   white-space: pre-wrap;
-  max-height: 2000px;
-  transition: all 1s ease-out;
-}
-
-.about p.contracted {
   max-height: 250px;
   overflow: hidden;
+  transition: all 4s ease-out;
+}
+
+.about p.m-opened {
+  max-height: 2000px;
 }
 
 button {
@@ -100,8 +131,8 @@ button {
 }
 
 .about button.more:hover,
-.about button.more:focus,
-.about button.more:active {
+.about button.more:active,
+.about button.more:focus {
   text-decoration: underline;
   outline: none;
 }
@@ -145,6 +176,48 @@ button {
   } 
 }
 
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .85);
+  z-index: 2000;
+}
+
+#modal.show {
+  display: block;
+}
+
+.modal-content {
+  position: relative;
+  height: 100%;
+  max-width: 105vh;
+  margin: 0 auto;
+  padding-top: 12vh;
+}
+.modal-content img {
+  max-width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  padding: 0px 28px 8px;
+  font-size: 4em;
+  font-weight: 100;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  z-index: 1000;
+  line-height: 1;
+}
 
 
 

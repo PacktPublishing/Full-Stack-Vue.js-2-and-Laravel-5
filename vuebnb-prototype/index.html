@@ -8,6 +8,7 @@
   <!-- <link rel="stylesheet" href="node_modules/open-sans-all/css/open-sans.css"> -->
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
 </head>
 <body>
 <div id="toolbar">
@@ -16,7 +17,12 @@
 </div>
 <div id="app">
   <div class="header">
-    <div class="header-img" v-bind:style="headerImageStyle"></div>
+    <div class="header-img" 
+    v-bind:style="headerImageStyle"
+    v-on:click="modalOpen = true"
+  >
+    <button class="view-photos">View Photos</button>
+  </div>
   </div>
   <div class="container">
     <div class="heading">
@@ -26,8 +32,8 @@
     <hr>
     <div class="about">
       <h3>About this listing</h3>
-      <p v-bind:class="{ contracted: contracted }">{{ about }}</p>
-      <button class="more" v-on:click="contracted = !contracted">+ More</button>
+      <p v-bind:class="{ 'm-opened': opened }">{{ about }}</p>
+      <button class="more" v-if="!opened" v-on:click="opened = true">+ More</button>
     </div>
     <div class="lists">
       <hr>
@@ -49,6 +55,14 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div id="modal" v-bind:class="{ show: modalOpen }">
+    <button v-on:click="modalOpen = false" class="modal-close">
+      &times;
+    </button>
+    <div class="modal-content">
+      <img src="sample/header.jpg"/>
     </div>
   </div>
 </div>
