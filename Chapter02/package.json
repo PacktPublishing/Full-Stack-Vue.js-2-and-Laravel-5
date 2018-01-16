@@ -15,6 +15,7 @@
   "homepage": "https://bitbucket.org/anthonygore/vuebnb-front#readme",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "open-sans-all": "^0.1.3",
     "vue": "^2.3.0"
   }
 }
