@@ -25,3 +25,10 @@ When you finish, run:
 
 `vagrant halt`
 
+
+### To build the project
+
+In **/Users/jgarci09/workspace/vue-projects/Full-Stack-Vue.js-2-and-Laravel-5/vuebnb** run:
+
+`npm run dev`
+
