@@ -9,6 +9,10 @@
   <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"> -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
   <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
+  <script type="text/javascript">
+    window.vuebnb_listing_model = "{!! addslashes(json_encode($model)) !!}"
+    // console.log(JSON.parse(window.vuebnb_listing_model));
+  </script>
 </head>
 <body>
 <div id="toolbar">

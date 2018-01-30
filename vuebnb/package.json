@@ -13,6 +13,7 @@
     "axios": "^0.17",
     "browser-sync": "^2.23.5",
     "browser-sync-webpack-plugin": "^1.2.0",
+    "core-js": "^2.5.3",
     "cross-env": "^5.1",
     "font-awesome": "^4.7.0",
     "laravel-mix": "^1.4",

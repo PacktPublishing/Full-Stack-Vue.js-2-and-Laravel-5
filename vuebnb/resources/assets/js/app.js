@@ -1,24 +1,22 @@
+import "core-js/fn/object/assign";
 import Vue from 'vue';
 import sample from './data';
 
+let model = JSON.parse(window.vuebnb_listing_model);
+
 var app = new Vue({
   el: '#app',
-  data: {
-    title: sample.title,
-    address: sample.address,
-    about: sample.about,
-    amenities: sample.amenities,
-    prices: sample.prices,
+  data: Object.assign(sample, {
     headerImageStyle: {
       'background-image': 'url(/images/header.jpg)'
     },
     opened: false,
     modalOpen: false,
     message: 'Hello world'
-  },
+  }),
   methods: {
-    escapeKeyListener: function(e) {
-      if (e.keyCode === 27 && this.modalOpen) {
+    escapeKeyListener(evt) {
+      if (evt.keyCode === 27 && this.modalOpen) {
         this.modalOpen = false;
       }
     }

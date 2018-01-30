@@ -32,3 +32,15 @@ In **/Users/jgarci09/workspace/vue-projects/Full-Stack-Vue.js-2-and-Laravel-5/vu
 
 `npm run dev`
 
+
+### To run the project and watching changes
+
+> Including BrowsingSync
+
+Go to [http://localhost:3000/](http://localhost:3000/)
+
+### After Chapter 5
+
+Go to [http://localhost:3000/listing/1](http://localhost:3000/listing/1)
+
+-> page 127
