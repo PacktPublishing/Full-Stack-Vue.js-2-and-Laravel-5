@@ -66,7 +66,7 @@
       &times;
     </button>
     <div class="modal-content">
-      <img src="{{ asset('images/header.jpg') }}"/>
+      <img v-bind:src="images[0]"/>
     </div>
   </div>
 </div>
