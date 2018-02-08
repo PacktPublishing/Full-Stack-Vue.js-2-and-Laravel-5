@@ -199,8 +199,9 @@ button {
   margin: 0 auto;
   padding-top: 12vh;
 }
-.modal-content img {
-  max-width: 100%;
+
+.image-carousel img {
+  width: 100%;
 }
 
 .modal-close {
