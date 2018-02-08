@@ -66,7 +66,7 @@
       &times;
     </button>
     <div class="modal-content">
-      <image-carousel></image-carousel>
+      <image-carousel :images="images"></image-carousel>
     </div>
   </div>
 </div>

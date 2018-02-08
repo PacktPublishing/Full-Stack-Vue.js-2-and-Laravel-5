@@ -37,10 +37,13 @@ In **/Users/jgarci09/workspace/vue-projects/Full-Stack-Vue.js-2-and-Laravel-5/vu
 
 > Including BrowsingSync
 
+Run: 
+`npm run watch`
+
 Go to [http://localhost:3000/](http://localhost:3000/)
 
 ### After Chapter 5
 
 Go to [http://localhost:3000/listing/1](http://localhost:3000/listing/1)
 
--> page 145 0 chapter 6
+-> page 159 - chapter 6
