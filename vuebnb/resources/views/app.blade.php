@@ -8,6 +8,7 @@
   <!-- <link rel="stylesheet" href="node_modules/open-sans-all/css/open-sans.css"> -->
   <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"> -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
+  <link rel="stylesheet" href="{{ asset('css/vue-style.css') }}" type="text/css">
   <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
   <script type="text/javascript">
     window.vuebnb_listing_model = "{!! addslashes(json_encode($model)) !!}"
@@ -20,14 +21,7 @@
   <h1>vuebnb</h1>
 </div>
 <div id="app">
-  <div class="header">
-    <div class="header-img" 
-    v-bind:style="headerImageStyle"
-    v-on:click="modalOpen = true"
-  >
-    <button class="view-photos">View Photos</button>
-  </div>
-  </div>
+  <header-image :image-url="images[0]" @header-clicked="openModal"></header-image>
   <div class="container">
     <div class="heading">
       <h1>@{{ title }}</h1>
@@ -36,39 +30,26 @@
     <hr>
     <div class="about">
       <h3>About this listing</h3>
-      <p v-bind:class="{ 'm-opened': opened }">@{{ about }}</p>
-      <button class="more" v-if="!opened" v-on:click="opened = true">+ More</button>
+      <p :class="{ 'm-opened': opened }">@{{ about }}</p>
+      <button class="more" v-if="!opened" @click="opened = true">+ More</button>
     </div>
     <div class="lists">
-      <hr>
-      <div class="amenities list">
-        <div class="title"><strong>Amenities</strong></div>
-        <div class="content">
-          <div class="list-item" v-for="amenity in amenities">
-            <i class="fa fa-lg" v-bind:class="amenity.icon"></i>
-            <span>@{{ amenity.title }}</span>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="prices list">
-        <div class="title"><strong>Prices</strong></div>
-        <div class="content">
-          <div class="list-item" v-for="price in prices">
-            @{{ price.title }}: <strong>@{{ price.value }}</strong>
-          </div>
-        </div>
-      </div>
+      <feature-list title="Amenities" :items="amenities">
+        <template slot-scope="amenity">
+          <i class="fa fa-lg" :class="amenity.icon"></i>
+          <span>@{{ amenity.title }}</span>
+        </template>
+      </feature-list>
+      <feature-list title="Prices" :items="prices">
+        <template slot-scope="price">
+          @{{ price.title }}: <strong>@{{ price.value }}</strong>
+        </template>
+      </feature-list>
     </div>
   </div>
-  <div id="modal" v-bind:class="{ show: modalOpen }">
-    <button v-on:click="modalOpen = false" class="modal-close">
-      &times;
-    </button>
-    <div class="modal-content">
-      <image-carousel :images="images"></image-carousel>
-    </div>
-  </div>
+  <modal-window ref="imagemodal">
+    <image-carousel :images="images"></image-carousel>
+  </modal-window>
 </div>
 <script src="{{ asset('js/app.js') }}"></script>
 </body>

@@ -50,20 +50,6 @@ body.modal-open {
   margin-top: 67px;
 }
 
-.header {
-  height: 320px;
-}
-
-.header .header-img {
-  position: relative;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-color: #f5f5f5;
-  cursor: pointer;
-}
-
 button {
   border-radius: 4px;
   border: 1px solid #c4c4c4;
@@ -80,17 +66,6 @@ button {
   font-size: 14px;
   display: inline-block;
   margin-bottom: 0;
-}
-
-.header .header-img .view-photos {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid #dce0e0;
 }
 
 .about {
@@ -136,117 +111,6 @@ button {
 .about button.more:focus {
   text-decoration: underline;
   outline: none;
-}
-
-.list {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 2em 0;
-}
-
-.list .title {
-  flex: 1 1 25%;
-}
-
-.list .content {
-  flex: 1 1 75%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.list .list-item {
-  flex: 0 0 50%;
-  margin-bottom: 16px;
- }
-
-.list .list-item > i {
-  width: 35px;
-}
-
-@media (max-width: 743px) {
-  .list .title {
-    flex: 1 1 33%;
-  }
-  
-  .list .content {
-    flex: 1 1 67%;
-  }
-
-  .list .list-item {
-    flex: 0 0 100%;
-  } 
-}
-
-#modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, .85);
-  z-index: 2000;
-}
-
-#modal.show {
-  display: block;
-}
-
-.modal-content {
-  position: relative;
-  height: 100%;
-  max-width: 105vh;
-  margin: 0 auto;
-  padding-top: 12vh;
-}
-
-.modal-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: auto;
-  height: auto;
-  padding: 0px 28px 8px;
-  font-size: 4em;
-  font-weight: 100;
-  background: transparent;
-  border: 0;
-  outline: none;
-  color: #ffffff;
-  z-index: 1000;
-  line-height: 1;
-}
-
-.image-carousel img {
-  width: 100%;
-}
-
-.image-carousel {
-  height: 100%;
-  margin-top: -12vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-carousel .controls {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.carousel-control {
-  padding: 1rem;
-  color: #ffffff;
-  opacity: 0.85
-}
-
-@media (min-width: 744px) {
-  .carousel-control {
-    font-size: 3rem;
-  }
 }
 
 
