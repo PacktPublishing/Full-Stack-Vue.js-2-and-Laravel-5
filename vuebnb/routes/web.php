@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// use App\Listing;
+
+Route::get('/listing/{listing}', 'ListingController@get_listing_web');
