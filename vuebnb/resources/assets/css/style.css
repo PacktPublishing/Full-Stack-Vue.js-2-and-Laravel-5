@@ -68,50 +68,7 @@ button {
   margin-bottom: 0;
 }
 
-.about {
-  margin-top: 2em;
-}
 
-.about h3 {
-  font-size: 22px;
-}
-
-.about p {
-  white-space: pre-wrap;
-  max-height: 250px;
-  overflow: hidden;
-  transition: all 4s ease-out;
-}
-
-.about p.m-opened {
-  max-height: 2000px;
-}
-
-button {
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  white-space: nowrap;
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 0;
-}
-  
-.about button.more {
-  background: transparent;
-  border: 0;
-  color: #008489;
-  padding: 0;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.about button.more:hover,
-.about button.more:active,
-.about button.more:focus {
-  text-decoration: underline;
-  outline: none;
-}
 
 
 
