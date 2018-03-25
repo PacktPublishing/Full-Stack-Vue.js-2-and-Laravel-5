@@ -25,7 +25,7 @@ let populateAmenitiesAndPrices = function(state) {
   };
   for (let key in state) {
     let arr = key.split("_");
-    if (arr[0] === 'amenity') {
+    if (arr[0] === 'amenity' && state[key]) {
       obj.amenities.push(key);
     }
     if (arr[0] === 'price') {
