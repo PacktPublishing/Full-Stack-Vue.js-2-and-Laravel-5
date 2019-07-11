@@ -7,27 +7,27 @@
 
         <div class="container">
             <div class="heading">
-                <h1>@{{ title }}</h1>
-                <p>@{{ address }}</p>
+                <h1>{{ title }}</h1>
+                <p>{{ address }}</p>
             </div>
 
             <hr>
 
             <div class="about">
                 <h3>About this listing</h3>
-                <expandable-text>@{{ about }}</expandable-text>
+                <expandable-text>{{ about }}</expandable-text>
             </div>
 
             <div class="lists">
                 <feature-list title="Amenities" :items="amenities">
                     <template slot-scope="amenity">
                         <i class="fa fa-lg" :class="amenity.icon"></i>
-                        <span>@{{ amenity.title }}</span>
+                        <span>{{ amenity.title }}</span>
                     </template>
                 </feature-list>
                 <feature-list title="Prices" :items="prices">
                     <template slot-scope="price">
-                        @{{ price.title }}: <strong>@{{ price.value }}</strong>
+                        {{ price.title }}: <strong>{{ price.value }}</strong>
                     </template>
                 </feature-list>
             </div>
