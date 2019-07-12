@@ -9,16 +9,11 @@
   <link rel="stylesheet" href="{{ asset('css/vue-style.css') }}" type="text/css">
 
   <script type="text/javascript">
-    window.vuebnb_listing_model = "{!! addslashes(json_encode($model)) !!}";
-    console.log(JSON.parse(window.vuebnb_listing_model));
+    window.vuebnb_server_data = "{!! addslashes(json_encode($data)) !!}";
+    // console.log(JSON.parse(window.vuebnb_listing_model));
   </script>
 </head>
 <body>
-
-<div id="toolbar">
-  <img class="icon" src="{{ asset('images/logo.png') }}">
-  <h1>vuebnb</h1>
-</div>
 
 <div id="app"></div>
 
