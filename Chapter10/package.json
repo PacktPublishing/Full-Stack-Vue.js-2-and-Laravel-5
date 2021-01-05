@@ -12,7 +12,7 @@
     "ftp-deploy": "cross-env FTP_SKIP_IMAGES=1 node ./scripts/ftp.js"
   },
   "devDependencies": {
-    "axios": "^0.17",
+    "axios": "^0.21",
     "browser-sync": "^2.18.13",
     "browser-sync-webpack-plugin": "^1.2.0",
     "core-js": "^2.5.1",
