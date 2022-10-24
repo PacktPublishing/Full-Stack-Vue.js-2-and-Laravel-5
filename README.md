@@ -38,3 +38,7 @@ Before you begin development on the case-study project, you must ensure that you
 * [Vue.js 2.x by Example](https://www.packtpub.com/application-development/vuejs-2x-example?utm_source=github&utm_medium=repository&utm_campaign=9781788293464)
 
 * [Vue.js 2 Web Development Projects](https://www.packtpub.com/web-development/vuejs-2-web-development-projects?utm_source=github&utm_medium=repository&utm_campaign=9781787127463)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781788299589">https://packt.link/free-ebook/9781788299589 </a> </p>
