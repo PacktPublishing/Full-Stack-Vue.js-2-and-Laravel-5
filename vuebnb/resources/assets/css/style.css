@@ -1,0 +1,67 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #484848;
+  font-size: 17px;
+  margin: 0;
+}
+
+.listing-container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media (min-width: 744px) {
+  .listing-container {
+    width: 696px;
+  }
+}
+
+.home-container {
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@media (min-width: 1131px) {
+  .home-container {
+    width: 1080px;
+  }
+}
+
+.heading {
+  margin-bottom: 2em;
+}
+
+.heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.heading p {
+  font-size: 15px;
+  color: #767676;
+}
+
+button {
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
